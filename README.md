@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Gerenciador de Trades
 
-## Getting Started
+O Gerenciador de Trades é uma aplicação que permite aos usuários controlar e calcular suas operações de trading de forma eficiente. Com esta aplicação, os usuários podem informar o valor inicial de margem, a porcentagem desejada a ser buscada a cada dia e o número de dias que desejam manter esse controle.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Entrada de Valor Inicial de Margem**: Os usuários podem inserir o valor inicial de margem para suas operações de trading.
+- **Porcentagem Diária**: Os usuários podem especificar a porcentagem que desejam buscar em suas operações de trading a cada dia.
+- **Número de Dias**: Os usuários podem informar o número de dias que desejam manter o controle de suas operações.
+- **Cálculo Automático**: Com base nas informações fornecidas, a aplicação calcula e exibe os resultados, incluindo o aumento diário e o valor final de margem.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Componentes Principais
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### MainForm Component
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+O componente `MainForm` é o principal da aplicação. Ele permite aos usuários inserir o valor inicial de margem, a porcentagem diária desejada e o número de dias. A partir dessas informações, a aplicação calcula os resultados e os exibe para o usuário.
 
-## Learn More
+### CurrencyInput Component
 
-To learn more about Next.js, take a look at the following resources:
+O componente `CurrencyInput` é responsável pela entrada do valor inicial de margem. Ele exibe um campo de entrada de texto que permite aos usuários inserir valores monetários de forma intuitiva.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contribuição
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Contribuições são bem-vindas! Se você encontrar algum problema ou tiver sugestões de melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-## Deploy on Vercel
+## Licença
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
