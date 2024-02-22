@@ -3,8 +3,7 @@
 ![image](https://github.com/hannermoraes/trade-control/assets/101107412/c9aec853-9c6d-4e44-8192-d0ea6e45c4d8)
 
 
-
-O Gerenciador de Trades é uma aplicação que permite aos usuários controlar e calcular suas operações de trading de forma eficiente. Com esta aplicação, os usuários podem informar o valor inicial de margem, a porcentagem desejada a ser buscada a cada dia e o número de dias que desejam manter esse controle.
+O Gerenciador de Trades é uma aplicação que permite aos usuários controlar e calcular suas operações de trading de forma eficiente. Com esta aplicação, os usuários podem informar o valor inicial de margem, a porcentagem desejada como objetivo a cada dia e o número de dias que desejam manter esse controle.
 
 ## Funcionalidades
 
@@ -12,6 +11,12 @@ O Gerenciador de Trades é uma aplicação que permite aos usuários controlar e
 - **Porcentagem Diária**: Os usuários podem especificar a porcentagem que desejam buscar em suas operações de trading a cada dia.
 - **Número de Dias**: Os usuários podem informar o número de dias que desejam manter o controle de suas operações.
 - **Cálculo Automático**: Com base nas informações fornecidas, a aplicação calcula e exibe os resultados, incluindo o aumento diário e o valor final de margem.
+
+## Tecnologias Utilizadas
+
+- [React.js](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [Shadcn-ui](https://ui.shadcn.com/)
 
 ## Componentes Principais
 
