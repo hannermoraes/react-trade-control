@@ -56,7 +56,7 @@ export default function MainForm() {
         </div>
 
 
-        <div className="grid w-full gap-1.5 mt-4">
+        <div className="grid w-full gap-1 mt-4">
           <Label className="text-sm font-light block leading-6" htmlFor="percentage">Porcentagem Diária %:</Label>
           <div className="relative rounded-md shadow-sm">
             <div className="pointer-events-none absolute inset-y-6 left-0 flex items-center pl-3" >
