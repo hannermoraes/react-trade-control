@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
+import { Header } from "@/components/Header";
+import { GeistSans } from 'geist/font/sans';
 
-const inter = Inter({ subsets: ["latin"] });
+
 
 export const metadata: Metadata = {
-  title: "Platform Trade Control",
-  description: "This is the platform for people to financially manage their trades in the cryptocurrency market.",
+  title: "Trade Control",
 };
 
 export default function RootLayout({
@@ -16,15 +16,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning >
+    <html lang="pt-br" suppressHydrationWarning >
       <head />
-      <body className={inter.className}>
+      <body className={GeistSans.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
+          <Header />
           {children}
         </ThemeProvider>
       </body>

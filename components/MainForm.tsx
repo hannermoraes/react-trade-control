@@ -41,7 +41,7 @@ export default function MainForm() {
   }
 
   return (
-    <div className="flex flex-row gap-20">
+    <div className="w-full flex flex-col md:flex-row gap-20">
       <form onSubmit={handleSubmit} >
 
         <div className="grid 2-full gap-1.5">
@@ -56,7 +56,7 @@ export default function MainForm() {
         </div>
 
 
-        <div className="grid w-full gap-1.5 mt-4">
+        <div className="grid gap-1.5 mt-4">
           <Label className="text-sm font-light block leading-6" htmlFor="percentage">Porcentagem Diária %:</Label>
           <div className="relative mt-2 rounded-md shadow-sm">
             <div className="pointer-events-none absolute inset-y-6 left-0 flex items-center pl-3" >
@@ -83,7 +83,7 @@ export default function MainForm() {
           </Button>
         </div>
       </form>
-      <div>
+      <div className="w-full">
         <TableList results={results} />
       </div>
     </div>
